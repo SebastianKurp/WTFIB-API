@@ -122,8 +122,8 @@ function parse(data) {
 }
 
 fetchSchema({
-  base: "appzBfSapK8j4MP6R",
-  token: ` brw=brwVrlUruacSgYBLm; ajs_user_id=null; ajs_group_id=null; lightstep_guid/liveapp=7c424db47f697488; lightstep_session_id=63c0db3d095d202b; ajs_anonymous_id=%222a7f2880-09f7-4acd-9f7b-6c5dd596d4e9%22; express:sess=eyJzZXNzaW9uSWQiOiJzZXM1Z1lSVWVua09KbU9tNSIsImNzcmZTZWNyZXQiOiJvaUJ5Z2thUVdHeC12LUxNNXhpVW1vdm0iLCJoaWdoU2VjdXJpdHlNb2RlRW5hYmxlZFRpbWUiOjE1NjUyMTcwMjMxNzcsInVzZXJJZCI6InVzckpHa3dnODgwTXpweW5ZIn0=; express:sess.sig=xeXLRY0wuoOQH-3TwfnY6K3F4xo; __Host-airtable-session=eyJzZXNzaW9uSWQiOiJzZXM1Z1lSVWVua09KbU9tNSIsImNzcmZTZWNyZXQiOiJvaUJ5Z2thUVdHeC12LUxNNXhpVW1vdm0iLCJoaWdoU2VjdXJpdHlNb2RlRW5hYmxlZFRpbWUiOjE1NjUyMTcwMjMxNzcsInVzZXJJZCI6InVzckpHa3dnODgwTXpweW5ZIn0=; __Host-airtable-session.sig=F_cNctiqrLtv7HCfBgj9qtlF9vLbzpH62wEJoUrMKqE; AWSELB=F5E9CFCB0C87D62DB5D03914FDC2A2D2D45FBECE92075869B3F7F698D732FCC7347AFF1CEA0BC1262B9940A7DF1D234855648842F32F5D8337B76D8F27CD1ED10202C16A19; intercom-session-wb1whb4b=dXFGcEdiZTVnS0Zsb25zZ21aVGk5NGZ4LzV4dHVkU1RjaUhwOWRScVVRZTFtd2lzZ3RmcTVJcXBSM0x6NVNhcy0tbjJONnFGWThlV2QvNVl1NmY5SXExdz09--0868f8fb9e7e9c00c018f91e119b04fbae028fa1; userSignature=usrJGkwg880MzpynY2019-09-04T20:41:10.000Z; userSignature.sig=USP2ks8j51OOSrbsDQecXZiSPHa8LAUhLMMe2tDD8Uk`
+  base: "base goes here",
+  token: ` brw=token goes here`
 })
   .then(parseResponse)
   .then(keyTablesById)
