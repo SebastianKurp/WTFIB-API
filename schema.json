@@ -1,0 +1,144 @@
+{
+  "id": "appzBfSapK8j4MP6R",
+  "name": "WTFIB",
+  "tables": [
+    {
+      "id": "tbltoqMbwY26zQhO3",
+      "name": "LandMarks",
+      "columns": [
+        {
+          "name": "Landmark",
+          "type": "text",
+          "field": "landmark",
+          "options": {}
+        },
+        {
+          "name": "Latitude",
+          "type": "number",
+          "field": "latitude",
+          "options": {
+            "format": "decimal"
+          }
+        },
+        {
+          "name": "Longitude",
+          "type": "number",
+          "field": "longitude",
+          "options": {
+            "format": "decimal"
+          }
+        },
+        {
+          "name": "Photos",
+          "type": "multipleAttachment",
+          "field": "photos",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "id": "tblIcEcQubLEgcfr3",
+      "name": "Cities",
+      "columns": [
+        {
+          "name": "City",
+          "type": "text",
+          "field": "city",
+          "options": {}
+        },
+        {
+          "name": "Latitude",
+          "type": "number",
+          "field": "latitude",
+          "options": {
+            "format": "decimal"
+          }
+        },
+        {
+          "name": "Longitude",
+          "type": "number",
+          "field": "longitude",
+          "options": {
+            "format": "decimal"
+          }
+        },
+        {
+          "name": "Visited",
+          "type": "text",
+          "field": "visited",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "id": "tblcXwvbBKDTkGgPM",
+      "name": "Countries",
+      "columns": [
+        {
+          "name": "Country",
+          "type": "text",
+          "field": "country",
+          "options": {}
+        },
+        {
+          "name": "Visited",
+          "type": "text",
+          "field": "visited",
+          "options": {}
+        },
+        {
+          "name": "Latitude",
+          "type": "number",
+          "field": "latitude",
+          "options": {
+            "format": "decimal"
+          }
+        },
+        {
+          "name": "Longitude",
+          "type": "number",
+          "field": "longitude",
+          "options": {
+            "format": "decimal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tblBKwfSCdRblyz22",
+      "name": "Stories",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text",
+          "field": "name",
+          "options": {}
+        },
+        {
+          "name": "StartDate",
+          "type": "text",
+          "field": "startDate",
+          "options": {}
+        },
+        {
+          "name": "Attachments",
+          "type": "multipleAttachment",
+          "field": "attachments",
+          "options": {}
+        },
+        {
+          "name": "EndDate",
+          "type": "text",
+          "field": "endDate",
+          "options": {}
+        },
+        {
+          "name": "storyCover",
+          "type": "multipleAttachment",
+          "field": "storyCover",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}
