@@ -1,4 +1,4 @@
-# WTFIB-API
+# WIB-API
 ## Tech Used:
 - GraphQL
 - Node.js as the enviroment
@@ -6,7 +6,7 @@
 - AirTable as the DB
 
 ## About
-This is a graphQL api that uses airtable as the database for my [WTFIB project](https://github.com/SebastianKurp/WTFIB)
+This is a graphQL api that uses airtable as the database for my [WIB project](https://github.com/SebastianKurp/WTFIB)
 It works by parsing the REST api that airtable provides users and converts the schema to be used with graphQL.
 I choose airtable as the DB, since I wanted something that I could easily manage and update with little to no code. 
 Airtable is simple like google sheets but allows for a lot of customablitly and data types normally not supported by google sheets.
