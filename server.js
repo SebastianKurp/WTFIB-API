@@ -26,13 +26,7 @@ async function start() {
     schema,
     playground: true,
     introspection: true,
-    cors: {
-      origin: "*",
-      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-      preflightContinue: false,
-      optionsSuccessStatus: 204,
-      credentials: true
-    }
+    cors: false
   });
 
   server.listen({ port: PORT || 8080 }).then(({ url }) => {
