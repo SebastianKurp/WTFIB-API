@@ -25,8 +25,7 @@ async function start() {
   const server = new ApolloServer({
     schema,
     cors: {
-      origin: "https://www.sebastiankurpiel.com/",
-      methods: "GET, POST",
+      origin: "*",
       allowHeaders:[
          "Access-Control-Allow-Credentials",
          "true","Content-Type",
