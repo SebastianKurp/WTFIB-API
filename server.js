@@ -26,7 +26,7 @@ async function start() {
     schema,
     cors: {
       origin: "https://www.sebastiankurpiel.com/",
-      methods: "GET",
+      methods: "GET, POST",
       allowHeaders:[
          "Access-Control-Allow-Credentials",
          "true","Content-Type",
