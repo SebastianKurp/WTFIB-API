@@ -26,12 +26,7 @@ async function start() {
     schema,
     cors: {
       origin: "*",
-      allowHeaders:[
-         "Access-Control-Allow-Credentials",
-         "true","Content-Type",
-         "Access-Control-Allow-Origin",
-         "Access-Control-Allow-Headers"
-      ]
+      credentials: true
     },
     playground: true,
     introspection: true
