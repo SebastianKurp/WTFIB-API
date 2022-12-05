@@ -26,7 +26,9 @@ async function start() {
     schema,
     playground: true,
     introspection: true,
-    cors: false
+    cors: {
+      allowedHeaders: ["Access-Control-Allow-Origin"],
+    }
   });
 
   server.listen({ port: PORT || 8080 }).then(({ url }) => {
