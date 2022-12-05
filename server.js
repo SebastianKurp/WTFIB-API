@@ -24,6 +24,10 @@ async function start() {
 
   const server = new ApolloServer({
     schema,
+    cors: {
+      origin: "https://www.sebastiankurpiel.com/",
+      methods: "GET",
+    },
     playground: true,
     introspection: true
   });
