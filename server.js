@@ -27,6 +27,12 @@ async function start() {
     cors: {
       origin: "https://www.sebastiankurpiel.com/",
       methods: "GET",
+      allowHeaders:[
+         "Access-Control-Allow-Credentials",
+         "true","Content-Type",
+         "Access-Control-Allow-Origin",
+         "Access-Control-Allow-Headers"
+      ]
     },
     playground: true,
     introspection: true
