@@ -24,12 +24,15 @@ async function start() {
 
   const server = new ApolloServer({
     schema,
+    playground: true,
+    introspection: true,
     cors: {
       origin: "*",
+      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+      preflightContinue: false,
+      optionsSuccessStatus: 204,
       credentials: true
-    },
-    playground: true,
-    introspection: true
+    }
   });
 
   server.listen({ port: PORT || 8080 }).then(({ url }) => {
