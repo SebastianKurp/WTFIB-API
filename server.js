@@ -4,6 +4,7 @@ const { PORT, BASE_ID, API_KEY } = process.env;
 const { makeExecutableSchema } = require("graphql-tools");
 const { printSchema } = require("graphql");
 const { ApolloServer, gql } = require("apollo-server");
+const cors = require('cors');
 const AirtableGraphQL = require("@draftbit/airtable-graphql");
 
 const schema = require("./schema.json");
@@ -26,14 +27,13 @@ async function start() {
     schema,
     playground: true,
     introspection: true,
-    cors: {
-      allowedHeaders: ["Access-Control-Allow-Origin"],
-    }
   });
 
   server.listen({ port: PORT || 8080 }).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`);
   });
+  
+  server.use(cors())
 }
 
 try {
