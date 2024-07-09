@@ -1,17 +1,19 @@
 {
   "name": "wtfib-api",
   "version": "1.0.0",
-  "description": "Where the fuck I've been",
+  "description": "Where the freak I've been",
   "main": "server.js",
   "license": "MIT",
   "dependencies": {
-    "@draftbit/airtable-graphql": "^2.2.0",
+    "airtable": "^0.12.2",
     "apollo-server": "^2.9.2",
+    "camelcase": "^8.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
-    "unsplash-js": "^6.0.0",
-    "cors": "^2.8.5"
+    "pluralize": "^8.0.0",
+    "unsplash-js": "^6.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
